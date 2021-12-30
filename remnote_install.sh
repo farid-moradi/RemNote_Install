@@ -63,7 +63,6 @@ cp $ICON_FILE ~/.local/share/icons/hicolor/512x512/apps/remnote.png
 # Installing Desktop file
 rm -f ~/.local/share/applications/remnote.desktop
 mkdir -p  ~/.local/share/applications/
-cat $DESKTOP_FILE
 sed -i "s@^Exec.*@Exec=$DEST_DIR/$VERSION --no-sandbox %U@1" $DESKTOP_FILE
 cp $DESKTOP_FILE ~/.local/share/applications/
 
